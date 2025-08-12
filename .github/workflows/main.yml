@@ -16,15 +16,15 @@ jobs:
       - name: Generate GitHub Stats Images
         run: |
           mkdir -p assets
-          curl -o assets/streak.svg "https://streak-stats.demolab.com?user=${{ github.repository_owner }}&theme=radical"
-          curl -o assets/langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=${{ github.repository_owner }}&layout=compact&theme=radical"
-          curl -o assets/trophies.svg "https://github-profile-trophy.vercel.app/?username=${{ github.repository_owner }}&theme=radical"
+          curl -o assets/streak.svg "https://streak-stats.demolab.com?user=Aisha-naz&theme=radical"
+          curl -o assets/langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=Aisha-naz&layout=compact&theme=radical"
+          curl -o assets/trophies.svg "https://github-profile-trophy.vercel.app/?username=Aisha-naz&theme=radical"
 
       # ✅ GitHub Snake Game
       - name: Generate Snake Game
         uses: Platane/snk@v3
         with:
-          github_user_name: ${{ github.repository_owner }}
+          github_user_name: Aisha-naz
           outputs: |
             dist/snake.svg
             dist/snake-dark.svg?palette=github-dark
