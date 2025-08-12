@@ -19,8 +19,9 @@ jobs:
         run: |
           mkdir -p assets
           curl -o assets/streak.svg "https://streak-stats.demolab.com?user=Aisha-naz&theme=radical"
+          curl -o assets/stats.svg "https://github-readme-stats.vercel.app/api?username=Aisha-naz&show_icons=true&theme=radical"
           curl -o assets/langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=Aisha-naz&layout=compact&theme=radical"
-          curl -o assets/trophies.svg "https://github-profile-trophy.vercel.app/?username=Aisha-naz&theme=radical"
+          curl -o assets/trophies.svg "https://github-profile-trophy.vercel.app/?username=Aisha-naz&theme=hyochan"
 
       - name: Generate Snake Game
         uses: Platane/snk@v3
