@@ -54,6 +54,7 @@
 ## 📊 GitHub Stats  
 
 <p align="center">
+  
 ![Streak](assets/streak.svg)
 ![Stats](assets/stats.svg)
 <!--   <img src="https://github-readme-stats.vercel.app/api?username=Aisha-naz&show_icons=true&theme=tokyonight" height="165"/>
@@ -62,6 +63,7 @@
 
 ## 📈 Most Used Languages  
 <p>
+  
   ![langs](assets/langs.svg)
 <!--   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aisha-naz&layout=compact&theme=tokyonight" alt="Most Used Languages"/> -->
 </p>
@@ -118,6 +120,7 @@
 ---
 
 ## 🧑‍🤝‍🧑Contributions
+
 ![Contributions](dist/snake-dark.svg?palette=github-dark)
 
 ## 💻 Fun Coding  
