@@ -54,13 +54,16 @@
 ## 📊 GitHub Stats  
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Aisha-naz&show_icons=true&theme=tokyonight" height="165"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Aisha-naz&theme=tokyonight" height="165"/>
+  ![Streak](streak.svg)
+  ![Stats](stats.svg)
+<!--   <img src="https://github-readme-stats.vercel.app/api?username=Aisha-naz&show_icons=true&theme=tokyonight" height="165"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Aisha-naz&theme=tokyonight" height="165"/> -->
 </p>
 
 ## 📈 Most Used Languages  
 <p>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aisha-naz&layout=compact&theme=tokyonight" alt="Most Used Languages"/>
+  ![langs](langs.svg)
+<!--   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aisha-naz&layout=compact&theme=tokyonight" alt="Most Used Languages"/> -->
 </p>
 
 ---
@@ -113,6 +116,9 @@
 ![Trophies](assets/trophies.svg)
 
 ---
+
+## 🧑‍🤝‍🧑Contributions
+![Contributions](dist/snake-dark.svg?palette=github-dark)
 
 ## 💻 Fun Coding  
 <p align="center">
