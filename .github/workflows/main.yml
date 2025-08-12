@@ -1,41 +1,38 @@
-name: Update GitHub Profile Stats
+name: Update Profile Stats
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Runs daily at midnight UTC
-  workflow_dispatch: # Allows manual trigger
+    - cron: "0 */12 * * *" # Runs every 12 hours
+  workflow_dispatch: # Allow manual trigger
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      # Check out your repo
-      - name: Checkout Repository
-        uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      # Generate GitHub Streak Stats
-      - name: GitHub Streak Stats
+      # ✅ GitHub Stats Card (streak, most used languages, trophies)
+      - name: Generate GitHub Stats Images
         run: |
-          curl -o streak-stats.svg "https://github-readme-streak-stats.herokuapp.com?user=Aisha-naz&theme=dark&hide_border=true"
+          mkdir -p assets
+          curl -o assets/streak.svg "https://streak-stats.demolab.com?user=${{ github.repository_owner }}&theme=radical"
+          curl -o assets/langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=${{ github.repository_owner }}&layout=compact&theme=radical"
+          curl -o assets/trophies.svg "https://github-profile-trophy.vercel.app/?username=${{ github.repository_owner }}&theme=radical"
 
-      # Generate Most Used Languages Card
-      - name: Most Used Languages
-        run: |
-          curl -o top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=Aisha-naz&layout=compact&theme=dark&hide_border=true"
-
-      # Generate Snake Animation
-      - name: Generate Snake Animation
+      # ✅ GitHub Snake Game
+      - name: Generate Snake Game
         uses: Platane/snk@v3
         with:
-          github_user_name: Aisha-naz
+          github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/snake.svg
+            dist/snake-dark.svg?palette=github-dark
 
-      # Commit and push changes
-      - name: Commit & Push changes
+      - name: Commit and Push changes
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
           git add .
-          git commit -m "Updated README stats and snake game"
+          git commit -m "Update GitHub profile stats [skip ci]" || echo "No changes to commit"
           git push
