@@ -109,8 +109,8 @@
 ---
 
 ## Achievements
-![github-trophies](https://stats.hyo.dev/api/github-trophies?login=Aisha-naz)
-
+<!-- ![github-trophies](https://stats.hyo.dev/api/github-trophies?login=Aisha-naz) -->
+![Trophies](assets/trophies.svg)
 ---
 
 ## 💻 Fun Coding  
